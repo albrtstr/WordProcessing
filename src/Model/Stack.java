@@ -1,3 +1,5 @@
+package Model;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -39,7 +41,11 @@ public class Stack {
         return tumpukan.size() == 0;
     }
     
-    public void clear(){
-        
+    
+    public int lastIndexOf(Object o, int index){
+        if (index >= tumpukan.size()) 
+            throw new IndexOutOfBoundsException(index + " >= "+tumpukan.size());
+
+        return 0;
     }
 }

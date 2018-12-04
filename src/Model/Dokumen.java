@@ -1,3 +1,5 @@
+package Model;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,5 +21,8 @@ public class Dokumen {
         this.isi = isi;
     }
     
+    public int countJumlahKata(){
+        return this.getIsi().split(" ").length;
+    }
     
 }
